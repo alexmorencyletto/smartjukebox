@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Player</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Smart Jukebox Player</h1>
+		<div id="player">
+			<div id="song-info" class="psong-info">
+				<marquee behavior="scroll" direction="left" scrollamount="5">
+					<div id="song-title">Song Title- Song Title-Song Title</div>
+				</marquee>
+					<div id="song-artist">Artist Name-Artist Name</div>
+				
+			</div>
+			<button id="previous-button" class="player-button" onclick="backTrack()"></button>
+			<button id="play-button" class="player-button" onclick="playTrack()" ></button>
+			<button id="pause-button" class="player-button" onclick="pauseTrack()"></button>
+			<button id="next-button" class="player-button" onclick="nextTrack()"></button>
+		</div>
+	</div>
+	<div class="container">
+		<ul id="file-list"></ul>
+	</div>
+</body>
+</html>
